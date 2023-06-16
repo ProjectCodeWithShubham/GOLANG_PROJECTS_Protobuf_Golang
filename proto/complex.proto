@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package example.complex;
+
+option go_package = "github.com/Clement-Jean/proto-go-course/proto";
+
+message Dummy1{
+    uint32 id =1;
+    string name=2;
+}
+
+
+message Complex {
+    Dummy1 one_dummy =1;
+    repeated Dummy1 multiple_dummies = 2;
+
+}
